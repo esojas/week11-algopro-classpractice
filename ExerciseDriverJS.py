@@ -24,9 +24,11 @@ mylist = howmanyitems()
 
 
 def calculate(mylist):
+    total = 0
     for item in mylist:
         print(f"Food: {item.foodname}, Amount: {item.calculate1()}")
-
+        total += item.calculate1()
+    print(f"total cost is {total}")
 
 
 calculate(mylist)
